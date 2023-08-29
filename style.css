@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background: url(https://img.freepik.com/premium-vector/golden-green-speed-neon-lights-background_23-2148621362.jpg); */
+  background: url(./4147486.jpg);
+  background-size: cover; /* Adjust background sizing */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body::-webkit-scrollbar-thumb {
+  display: none;
+}
+.container {
+  max-width: 600px;
+  min-width: 500px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff2c;
+  backdrop-filter: blur(42px);
+  border: 2px solid white;
+  box-shadow: rgba(0, 0, 0, 0.504) 0px 54px 55px,
+    rgba(0, 0, 0, 0.584) 0px -12px 30px, rgba(0, 0, 0, 0.547) 0px 4px 6px,
+    rgba(0, 0, 0, 0.528) 0px 12px 13px, rgba(0, 0, 0, 0.52) 0px -3px 5px;
+  margin: 2% 0;
+}
+.container p {
+  text-align: center;
+}
+
+.container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.upload-container {
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+#imageInput{
+    display: none;
+}
+
+.drop-container {
+  border: 3px dashed #ddd;
+  border-radius: 8px;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  padding: 40px;
+  cursor: pointer;
+  color: black;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.drop-container:hover {
+  background-color: #f0f0f0;
+}
+
+#previewImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed #ddd;
+  border-radius: 8px;
+  background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+  color: black;
+  height: 250px;
+  margin-top: 20px;
+}
+
+#previewImage {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+#compressButton {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, blue, purple);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+  border: 2px solid white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+#compressButton:hover {
+    transition: background-color 0.3s ease-in-out;
+    background: linear-gradient(-45deg, blue, purple);
+}
+
+#downloadLink {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* ... Your existing CSS styles ... */
+
+.slider-container {
+    color: white;
+  margin-top: 20px;
+}
+
+/* Mouse follower styles */
+/* Mouse follower styles */
+.mouse-follower {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Ring animation styles */
+body:hover {
+  cursor: pointer;
+}
+.ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #007bff; /* Ring color */
+  background-color: aquamarine;
+  border-radius: 50%;
+  animation: ring-animation 3s infinite;
+  opacity: 0.6;
+}
+
+@keyframes ring-animation {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}

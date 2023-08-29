@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Image Compressor Tool</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="mouse-follower">
+      <div class="ring"></div>
+    </div>
+
+    <div class="container">
+      <p>
+        Made with ❤️ by
+        <a href="https://github.com/rajgopalhota/" target="_blank"
+          ><span>@RAJGOPAL HOTA</span></a
+        >
+      </p>
+      <h1>Image Compressor Tool</h1>
+      <div class="upload-container">
+        <label for="imageInput" class="upload-label">
+          <div class="drop-container" id="dropContainer">
+            <span>Click to upload image or</span>
+            <input type="file" id="imageInput" accept="image/*" />
+            <p>Drag &amp; Drop an image here</p>
+          </div>
+        </label>
+      </div>
+
+      <div class="slider-container">
+        <label for="compressionSlider">Image Compression (%):</label>
+        <input
+          type="range"
+          id="compressionSlider"
+          min="1"
+          max="100"
+          value="70"
+        />
+        <span id="sliderValue">70%</span>
+      </div>
+
+      <div class="preview-container">
+        <div id="previewImageContainer">
+          <img id="previewImage" src="#" alt="Preview" />
+        </div>
+      </div>
+      <button id="compressButton">Compress Image</button>
+      <a id="downloadLink" style="display: none" download
+        >Download Compressed Image</a
+      >
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
